@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos para Niños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #020303;
+        }
+        .juego {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 4px solid #250d91b2;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: #eb7bcfa1;"></body>
+    <h1>Juegos para Niños de 2 a 4 años</h1>
+    <h1>Bienvenido a la Página de Juegos para Niños</h1>
+
+    <div class="juego">
+        <h2>Juego de Colores</h2>
+        <p>Haz clic en tu color favorito:</p>
+        <img src="rojo.png" alt="Rojo" onclick="alert('¡Bien hecho! ¡Ese es el color rojo!')">
+        <img src="azul.png" alt="Azul" onclick="alert('¡Genial! ¡Ese es el color azul!')">
+        <img src="verde.png" width="100" height="100" alt="Verde"onclick="alert('¡Excelente! ¡Ese es el color verde!')">
+    </div>
+
+    <div class="juego">
+        <h2>Juego de Animales</h2>
+        <p>Encuentra al animal correcto:</p>
+        <img src="perro.jpg" alt="Perro" onclick="alert('¡Muy bien! ¡Ese es un perro!')">
+        <img src="gato.jpg" alt="Gato" onclick="alert('¡Fantástico! ¡Ese es un gato!')">
+        <img src="pato.jpg" alt="Pato" onclick="alert('¡Increíble! ¡Ese es un pato!')">
+    </div>
+
+    <div class="juego" onclick="abrirJuego('juego1.html')">
+        <h2>Juego de Colores</h2>
+        <p>¡Encuentra el color correcto!</p>
+    </div>
+
+    <div class="juego" onclick="abrirJuego('juego2.html')">
+        <h2>Puzzle de Animales</h2>
+        <p>Arma el rompecabezas de animales.</p>
+    </div>
+
+    <div class="juego" onclick="abrirJuego('juego3.html')">
+        <h2>Atrapa las Burbujas</h2>
+        <p>Atrapa las burbujas antes de que desaparezcan.</p>
+    </div>
+
+    <script>
+        function abrirJuego(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
